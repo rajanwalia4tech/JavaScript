@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coding-blocks/bootstrap@4.5.2/dist/css/bootstrap.min.css" integrity="sha384-qQEE8jdKJvtljxvtgWREfDOl721Sa1Qs8a1huL0PjJo3duiJ2wXnwTIRnbd/cTjY" crossorigin="anonymous">
+
+    <title>Notes App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+        <a class="navbar-brand" href="#">Notes App</a>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <h1>Welcome To Notes App</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
+            </div>
+        </div>
+        <hr>
+        <h1>Your Notes</h1>
+        <hr>
+        <div id="notes" class="row container-fluid">
+
+
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

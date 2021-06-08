@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+:root{
+	--border-radius: 5px;
+    --border-width: 1px;
+    --dark-blue: #02203c;
+    --blue: #7f6cfc;
+	--dark-red : #890023;
+	--font-style:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#calculator{
+	width: 45%;
+    height: 80%;
+    min-width: 300px;
+    min-height: 400px;
+    background-color: var(--dark-blue);
+    margin: auto;
+    margin-top: 40px;
+    border: 2px solid var(--dark-blue);
+    border-radius: var(--border-radius);
+    padding: 10px;
+}
+
+#calculator h1 {
+	font-family: var(--font-style);
+    background-color: var(--dark-red);
+	border-radius: var(--border-radius);
+    color: whitesmoke;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+}
+
+#display-container {
+    font-size: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end ;
+    justify-content: space-between;
+    color: var(--blue);
+    width: 100%;
+    height: 20%;
+    min-height: 100px;
+    border-radius: var(--border-radius);
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+#display-container #display {
+    margin: 0.1rem;
+    vertical-align: text-bottom;
+}
+#display-container #small-display{
+    margin:0.2rem;
+    color:gray;
+    font-size: 2rem;
+}
+
+#buttons-container {
+    width: 100%;
+    height: 60%;
+    min-height: 300px;
+    border: var(--border-width) solid var(--dark-blue);
+    border-radius: var(--border-radius);
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+	font-family: var(--font-style);
+}
+
+.button {
+    width: 25%;
+    height: 20%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-width) solid var(--dark-blue);
+	border-radius: var(--border-radius);
+	color: whitesmoke;
+    background-color: var(--dark-blue);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.button:hover {
+	border: var(--border-width) solid whitesmoke;
+}
+
+.red {
+    background-color: var(--dark-red);
+    color: white;
+}
+
+#button-zero {
+    width: 50%;
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Hello</H1>
+    <div class="div1">
+        Hello
+    </div>
+    <script>
+        var d = document.getElementsByClassName("div1")[0];
+        var text = localStorage.getItem("div");
+        if (text == null)
+            localStorage.setItem("div", t);
+        else {
+            d.innerText = text;
+            d.addEventListener('click', function() {
+                d.contentEditable = "true";
+                d.addEventListener('blur', function() {
+                    var t = d.innerText;
+                    localStorage.setItem("div", t);
+                })
+            })
+        }
+    </script>
+
+</body>
+
+</html>

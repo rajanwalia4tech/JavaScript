@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Toggle Button</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div style="text-align: center;">click me </div>
+	
+	<script>
+		var d = document.getElementsByTagName("div");
+		var body = document.querySelector("body");
+		d[0].addEventListener("click",function(e){
+			var type = d[0].style.color;
+			console.log(type)
+			if(type == "black"){
+				d[0].style.color = "white";
+				body.style.backgroundColor = "black";
+			}else{
+				
+				d[0].style.color = "black";
+				body.style.backgroundColor = "white";
+			}
+		})
+		
+	</script>
+	
+</body>
+</html>

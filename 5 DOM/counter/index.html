@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Counter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div style="width:200px;height:200px;display:inline-block;margin:auto;background-color: red;">
+		CLick me
+	</div>
+	<h1>you have click me <span>0</span> times</h1>
+	<script>
+		
+		var div  = document.getElementsByTagName("div");
+		div[0].addEventListener("click",function(e){
+			var span = document.getElementsByTagName("span");
+			var c = parseInt(span[0].innerText);
+			
+			span[0].innerText = parseInt(span[0].innerText) +1;
+		})
+	</script>
+	
+</body>
+</html>

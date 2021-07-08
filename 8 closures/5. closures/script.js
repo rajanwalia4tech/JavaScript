@@ -1,5 +1,5 @@
 // Closures - Outer function's  variables, functions are also availables to inner function
-// var a = 10;
+//  var a = 10;
 // function outer(){
 // 	var b = 20;
 // 	console.log(a,b);
@@ -104,7 +104,7 @@
 
 // var arr = new Array(6);
 
-// for(var i=1;i<=5;i++){
+// for(var i=0;i<6;i++){
 // 	//i++;
 // 	arr[i] = function(){
 // 		return 1;
@@ -141,7 +141,6 @@
 // new Person("aja")
 
 
-// 
 // function Person(name){
 // 	this.name = name;
 // 	console.log(this);
@@ -149,15 +148,15 @@
 // }
 
 // new Person("aja")
-(
-function Person(name){
-	this.name = name;
-	console.log(this);
 
-	setTimeout(function (){	// here function binds with the outer object or window 
-		console.log(this);	
-	},1000);
-}
-)();
+
+// (function Person(name){
+// 	this.name = name;
+// 	console.log(this);
+
+// 	setTimeout(function (){	// here function binds with the outer object or window 
+// 		console.log(this);	
+// 	},1000);
+// })();
 
 

@@ -7,12 +7,10 @@ print.onclick = ()=>{
 	let start = new  Date().getTime()
 	let text = document.getElementById("text").value;
 	let item = document.createElement('li');
-	item.textContent = "hellorajan";
 	list.appendChild(item);
 	for(let j=1;j<=parseInt(text);j++){
 		let item = document.createElement('li');
 		item.innerText = "hello"+j;
-		alert(j);
 		list.appendChild(item);
 	}
 	let end = new Date().getTime()

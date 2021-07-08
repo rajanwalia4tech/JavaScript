@@ -1,10 +1,10 @@
 
 // Using IIFE - Imeadiately Invoke Function Expression
-(function (){
-	var name = "File2";
+// (function (){
+// 	var name = "File2";
 
-	console.log(name);
-})();
+// 	console.log(name);
+// })();
 
 
 

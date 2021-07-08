@@ -49,6 +49,16 @@
 
 // printAll("fire", "water", "ice"); // Prints - fire water ice gas
 
+// var sum = function () {
+// 	console.log(arguments); // [12, 23, callee: (...), Symbol(Symbol.iterator): ƒ]
+//  }
+// sum(12,23);
+
+// var  sum = (a,b)=>{
+// 	console.log(arguments); // not defined in arrow functions
+// }
+// sum(12,23);
+
 //default parameters
 // function findInterest(p, r = 5, t = 1) {
 //   console.log("Interest over", t, "years is:", (p * r * t) / 100);

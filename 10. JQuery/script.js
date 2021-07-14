@@ -44,3 +44,42 @@ $("#p2").css({
 // var d1 = $("#d1").text() // return the innerText 
 // console.log(d1);
 
+$(".box").css({
+	width: "100px",
+	border:"3px solid blue",
+	height:"100px",
+	backgroundColor:"red",
+	color:"white",
+	textAlign:"center",
+});
+
+$(".box").text("Click Me");
+
+// It is same as AddEventlistener
+// $(".box").on("click", function () {
+// 	var box = $(this);
+// 	$(this).width(box.width()+10 +"px");
+// 	$(this).height(box.height()+10 +"px");
+// 	console.log($(this));
+// });
+
+// Same as Above method
+// $(".box").click(function () {
+// 	var box = $(this);
+// 	$(this).width(box.width()+10 +"px");
+// 	$(this).height(box.height()+10 +"px");
+// 	console.log($(this));
+// });
+
+
+// Binding multiple events with different handlers
+$( ".box" ).on({
+    "click": function() { 
+		var box = $(this);
+		$(this).width(box.width()+10 +"px");
+		$(this).height(box.height()+10 +"px");
+		console.log($(this));
+	},
+    "mouseenter": function() { $(this).css("background-color","green") },
+	"mouseleave" : function() { $(this).css("background-color","red") }
+});

@@ -1,10 +1,11 @@
- {"p1":{
-	"name" : "rajan",
-	"rollNo" : "123"
-},
+ {
+ 	"p1": {
+ 		"name": "rajan",
+ 		"rollNo": "123"
+ 	},
 
-"p2":{
-	"name" : "mukul",
-	"rollNo" : "123"
-}
+ 	"p2": {
+ 		"name": "mukul",
+ 		"rollNo": "123"
+ 	}
  }

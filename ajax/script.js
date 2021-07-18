@@ -6,6 +6,7 @@ btn.addEventListener("click",function(){
 	
 	xhttp.onload=function(){
 		if(this.status === 200){
+			
 			div.innerHTML =JSON.parse(this.responseText).p2.name;
 			console.log()
 			

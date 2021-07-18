@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Promise</title>
+</head>
+
+<body>
+	<h3>Promise introduced in ES6</h3>
+	<h2>A promise is an Object that indicates the success and failure of an asychronous task.</h2>
+	<pre>
+		where promise is used Promise solves a problem of asynchoronous chaining request
+		following is the pseudo code of aysynchrounous chaining
+		<br>
+		$.ajax({
+			success: function (response) {
+				$.ajax({
+					success: function (response) {
+						$.ajax({
+							success: function (response) {
+
+							}
+						});
+					}
+				});
+			}
+		});
+		<br>
+
+		// we can achieve the same above thing using promises in JS
+		// promise.then().then().then().then().catch()
+
+		promise in real life let say we have a social media website
+		how user logged in and what happens
+		1. User LogIn
+		2. fetch user feeds
+		3. fetch User friends
+		4. fetch User Messages etc.
+
+		we can achieve this thing using promise
+
+		checkUserLoggedIn().then(fetchUserFeeds).then(fetchUserFriends).then(fetchUserMessages).catch();
+		here checkUserLoggedIn() returns a promise
+		then checkUserLoggedIn().then(fetchUserFeeds) this also returns a promise
+		then checkUserLoggedIn().then(fetchUserFeeds).then(fetchUserFriends) this also returns a promise
+		checkUserLoggedIn().then(fetchUserFeeds).then(fetchUserFriends).then(fetchUserMessages) returns a promise
+
+		if any of the promise is rejected then no function is called in then
+		catch is called for the reject
+	</pre>
+
+	<script src="script.js"></script>
+</body>
+
+</html>

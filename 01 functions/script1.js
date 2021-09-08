@@ -26,7 +26,7 @@
 // }
 // console.log(add(1, 2));		// 1 2 undefined      NaN
 // console.log(add(1));		// 1 undefined undefined NaN	
-// console.log(add(1, 2, 3));  // 1 2 3	6
+//  console.log(add(1, 2, 3));  // 1 2 3	6
 
 //Arguments in Functions
 // function printAll() {
@@ -55,7 +55,7 @@
 // sum(12,23);
 
 // var  sum = (a,b)=>{
-// 	console.log(arguments); // not defined in arrow functions
+// 	console.log(arguments); // arguments not defined in arrow functions
 // }
 // sum(12,23);
 
@@ -100,23 +100,27 @@
 
 // function outer(){
 // 	let i=0;
+// 	var j = 10;
 // 	function middle(){
+		
 // 		function inner(){
 // 			i=10
-// 			console.log("inner",i);
+// 			var j=20; // can be use inside this block only
+// 			console.log("inner",i,j);
 // 		}
 // 		inner()
-// 		console.log("middle",i);
-
+// 		console.log("middle",i,j);
 // 	}
 // 	//inner() // REference Error : inner is not defined
-// 	console.log("outer",i)
+// 	console.log("outer",i,j)
 // 	middle()
-// 	console.log("outer",i)
+// 	console.log("outer",i,j)
 // }
 // outer()
 
 //function expression
+//console.log(factorial) // print undefined bcoz factorial is declared as undefined
+// console.log(factorial(3)); // Uncaught TypeError: factorial is not a function
 // var factorial = function fac(n) {
 //   return n < 2 ? 1 : n * fac(n - 1);
 // };
@@ -124,8 +128,8 @@
 //  console.log(fac(3)); // fac is not defined
 
 // Anonymous Functions
-//console.log(factorial) // print undefined bcoz factorial is declared as undefined
-//console.log(factorial(3)); //TypeError: factorial is not a function
+// console.log(factorial) // print undefined bcoz factorial is declared as undefined
+// console.log(factorial(3)); //TypeError: factorial is not a function
 // var factorial = function (n) {
 //   var ans = 1;
 //   for (var i = 2; i <= n; i++) 
@@ -133,7 +137,7 @@
 //     return ans;
 //   }
 
-// console.log(factorial(3));
+//  console.log(factorial(3));
 
 
 // passing functions / Callbacks
@@ -147,13 +151,13 @@
 // var ncr  = function(n,r,fact){
 // 	return fact(n)/(fact(r) * fact(n-r))
 // }	
-//console.log(ncr(5,3,factorial))  // factorial is passed as callback to ncr
+// console.log(ncr(5,3,factorial))  // factorial is passed as callback to ncr
 
 // var ncr  = function(n,r,fact){
 // 	return fact(n)/(fact(r) * fact(n-r))
 // }
 
-//  //// following function is a callback functions passed to ncr()
+ //// following function is a callback functions passed to ncr()
 // console.log( ncr(5,3,function (n){
 // 	let ans=1;
 // 	for(let i=1;i<=n;i++)
@@ -167,3 +171,6 @@
 // 	console.log("Timer 2 sec");
 // },2000)
 
+// setTimeout(function(){
+// 	console.log("timer 1 sec");
+// },1000)

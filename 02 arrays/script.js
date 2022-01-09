@@ -19,10 +19,17 @@
 // a= new Array(a,a);
 // console.log(a)					// [[1, 2, "raja"], [1, 2, "raja"]]
 // console.log(a.length);			// 2
+// a[1][4] ="Walia"
 // console.log(a[1][2])			// 3
+// console.log(a)
 // //console.log(a[2][2])			// TypeError: Cannot read property '2' of undefined
 // console.log(a[1].length);		// 3
 
+let temp = [1,"raja"];
+let arr = new Array(temp,[1,2,3]);
+temp[5] = "Hello"
+arr[1][5] = "hello"
+console.log(arr[1]);
 
 // here 2 is the size of array
 // a = new Array(2);

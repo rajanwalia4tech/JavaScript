@@ -8,28 +8,29 @@
 
 // console.log(a);				// [1, 2, 3, empty × 2, 34]
 // console.log(a[4]=33);		// 33
-// console.log(a)				// [1, 2, 3, empty, 33, 34]
+// console.log(a[3])				// [1, 2, 3, empty, 33, 34]
 
 // create an array using new keyword
 
 //create  pushes the element in the array
 // a = new Array(1,2,"raja")
 // console.log(a);					// [1, 2, "raja"]
-// //create 2d array
-// a= new Array(a,a);
+// // //create 2d array
+//  a= new Array(a,a);
 // console.log(a)					// [[1, 2, "raja"], [1, 2, "raja"]]
 // console.log(a.length);			// 2
 // a[1][4] ="Walia"
 // console.log(a[1][2])			// 3
 // console.log(a)
-// //console.log(a[2][2])			// TypeError: Cannot read property '2' of undefined
+// console.log(a[2][8])			// TypeError: Cannot read property '2' of undefined
 // console.log(a[1].length);		// 3
 
-let temp = [1,"raja"];
-let arr = new Array(temp,[1,2,3]);
-temp[5] = "Hello"
-arr[1][5] = "hello"
-console.log(arr[1]);
+// let temp = [1,"raja"];
+// let arr = new Array(temp,[1,2,3]);
+// temp[5] = "Hello"
+// console.log(arr[0])
+// arr[1][5] = "hello"
+// console.log(arr[1]);
 
 // here 2 is the size of array
 // a = new Array(2);
@@ -54,10 +55,10 @@ console.log(arr[1]);
 // console.log(a);
 
 
-//a = [12,23,43,56]
+// a = [12,23,43,56]
 
-//a.splice(1,1); // delete 1 element form 1st index
-//console.log(a);	// [12,43,56]
+// a.splice(1,1); // delete 1 element form 1st index
+// console.log(a);	// [12,43,56]
 // a.splice(1,0,"rajan","walia") // insert first element from 1st index and 0 shows not item delete
 // console.log(a);
 
@@ -69,22 +70,22 @@ console.log(arr[1]);
 // a = [12,23,22,33]
 // for(let i=0;i<a.length;i++)
 // 	console.log(a[i])
-	
 
- a = [12,23,22,33]
+
+// a = [12, 23, 22, 33]
 // console.log("\n")
 // function print(e){
 // 	console.log(e);
 // }
-// a.forEach(print);
+// console.log(a.forEach(print))
 
 // console.log("\n");
 // a.forEach(function (e) {
 // 	console.log(e)
 //   })
-  
+
 //  console.log("\n")
 //  a.forEach((e)=>{ console.log(e)
 //  })
 
-// a.forEach( e => console.log(e));
+// a.forEach(e => console.log(e));

@@ -1,0 +1,25 @@
+## Concepts to learn in JavaScript 
+
+- All about this keyword (how it works in different cases)
+- Object cloning (deep copy & shallow copy)
+- Scope and concept of hoisting
+- Temporal dead zone
+- execution context
+- Event loop (Micro/Macro tasks)
+- Different kinds of functions ( IIFE, Arrow functions, function statements, function expression, Higher Order functions, First Order functions, Anonymous functions, Getter functions)
+- HOF - map, filter and reduce - find practical usecase
+- Spread vs Rest operator - find practical usecase
+- call, apply and bind
+- Prototypal inheritance
+- Event bubbling/capturing/delegation
+- Debouncing and Throttling
+- chaining
+- currying
+- callbacks
+- promises
+- async and await
+- closures
+- setTimeout vs setInterval
+- Type Coercion
+- Memoization
+- DOM and BOM
